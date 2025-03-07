@@ -72,7 +72,7 @@ contract Assignment5 {
     // This function should:
     // - Be public and view
     // - Return the length of the `users` array
-    function getUserCount() public view {
+    function getUserCount() public view returns(uint) {
         // Fill in the logic
         Return users.length;
     }
