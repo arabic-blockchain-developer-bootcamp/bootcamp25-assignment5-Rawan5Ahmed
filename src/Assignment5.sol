@@ -74,6 +74,6 @@ contract Assignment5 {
     // - Return the length of the `users` array
     function getUserCount() public view returns(uint) {
         // Fill in the logic
-        Return users.length;
+        return users.length;
     }
 }
