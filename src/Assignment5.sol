@@ -10,8 +10,8 @@ contract Assignment5 {
     mapping(address => string) public userNames;
     // 4. Define a struct `User` with fields: `id` (uint), `name` (string)
     struct User {
-        id: uint;
-        name: string;
+        uint id;
+        string name;
         }
     // 5. Create a public array of `User` called `users`
     User[] public users;
