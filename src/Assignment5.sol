@@ -55,16 +55,14 @@ contract Assignment5 {
         // The memory keyword will be explained later
     // - Add a new user to the `users` array
     // - Update the `userNames` mapping with the address and name
-    function addUser(unit id , string memory name , address userAddress) public {
+    function addUser(uint id, string memory name, address userAddress) public{
         // Fill in the logic
-        User memory user;
-        user.id = id;
-        user.name = name;
-        users.push(user);
-        userNames[userAddress] = name;
+        User memory user = User(id, name);
         // Hint: you have to use the keyword `memory` to define the struct
             // For example: User memory user
+        users.push(user);
             // This keyword will be explained later
+        userNames[userAddress] = name;
 
     }
 
